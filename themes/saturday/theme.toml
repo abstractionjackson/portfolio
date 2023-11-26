@@ -1,10 +1,10 @@
-name = 'Theme name'
+name = 'Saturday'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
+licenselink = 'https://github.com/abstractionjackson/portfolio/LICENSE'
 description = 'Theme description'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://github.com/abstractionjackson/portfolio'
 
 # If you have a running demo of the theme
 demosite = 'https://owner.github.io/repo'
@@ -21,11 +21,5 @@ authors = [
 
 # If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
-
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
+  name = 'Jackson Galan'
+  homepage = 'abstractionjackson.com'

@@ -2,3 +2,19 @@ baseURL = 'https://github.com/abstractionjackson/portfolio'
 languageCode = 'en-us'
 title = 'Jackson Galan | Portfolio'
 theme = 'saturday'
+
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 10
+
+[[menus.main]]
+name = 'Projects'
+pageRef = '/projects'
+weight = 20
+
+[[menus.main]]
+name = 'Resume'
+pageRef = '/resume.pdf'
+weight = 30
