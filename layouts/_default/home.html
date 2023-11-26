@@ -5,24 +5,37 @@
 >
   <span><strong>Open to Work</strong></span>
   <span>📣</span>
-  <a href="http://www.linkedin.com/in/jacksongalan">Hire Jackson</a>
+  <a
+    href="http://www.linkedin.com/in/jacksongalan"
+    class="pico-color-blue-300"
+    >Hire Jackson</a
+  >
 </div>
 {{ end }} {{ define "main" }}
 <main>
-  <h2>Portfolio Site</h2>
+  {{ partial "business-card" . }}
   <div
     class="container"
-    style="max-width: 300px"
+    style="max-width: 400px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
   >
-    <business-card
-      full_name="Jack Galan"
-      company_name="Freelance"
-      job_title="Software Developer"
-      email="jacksongalan@gmail.com"
-      phone="4153597064"
-      avatar="images/avatar.png"
-    />
+    <business-card>
+      <img
+        slot="avatar"
+        src="{{ site.BaseURL }}images/avatar.png"
+        alt="headshot of young software engineer"
+      />
+      <h1 slot="full_name">
+        <span class="name_first">Jackson</span>
+        <span> </span>
+        <span class="name_last pico-color-blue-800">Galan</span>
+      </h1>
+      <a
+        slot="github"
+        href="https://github.com/abstractionjackson"
+        >@abstractionjackson</a
+      >
+      <h2 slot="job_title">Software Engineer</h2>
+    </business-card>
   </div>
 </main>
-{{ end }} {{/*
-<button style="margin: 0 1rem; padding: 0.25rem">Hire Jackson</button> */}}
+{{ end }}
