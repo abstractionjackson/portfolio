@@ -7,7 +7,14 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    <header>{{ partial "header.html" . }}</header>
+    <header style="margin: 0px; padding: 0px">
+      {{ block "banner" . }}
+      <div
+        class="banner"
+        hidden
+      ></div>
+      {{ end }} {{ partial "header.html" . }}
+    </header>
     <main>{{ block "main" . }}{{ end }}</main>
     <footer>{{ partial "footer.html" . }}</footer>
   </body>

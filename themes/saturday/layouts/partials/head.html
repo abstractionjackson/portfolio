@@ -7,7 +7,14 @@
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}
 </title>
-{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
+<link
+  rel="stylesheet"
+  href="{{ site.BaseURL }}pico-2/css/pico.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ site.BaseURL }}pico-2/css/pico.colors.min.css"
+/>
 <script
   type="module"
   src="{{ site.BaseURL }}js/businessCard/businessCard/index.js"

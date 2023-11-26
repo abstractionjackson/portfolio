@@ -1,4 +1,13 @@
-{{ define "main" }}
+{{ define "banner" }}
+<div
+  class="banner pico-background-blue-800"
+  style="text-align: center; padding: 0.25rem"
+>
+  <span><strong>Open to Work</strong></span>
+  <span>📣</span>
+  <a href="http://www.linkedin.com/in/jacksongalan">Hire Jackson</a>
+</div>
+{{ end }} {{ define "main" }}
 <main>
   <h2>Portfolio Site</h2>
   <div
@@ -7,7 +16,7 @@
   >
     <business-card
       full_name="Jack Galan"
-      company="Freelance"
+      company_name="Freelance"
       job_title="Software Developer"
       email="jacksongalan@gmail.com"
       phone="4153597064"
@@ -15,4 +24,5 @@
     />
   </div>
 </main>
-{{ end }}
+{{ end }} {{/*
+<button style="margin: 0 1rem; padding: 0.25rem">Hire Jackson</button> */}}
