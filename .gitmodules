@@ -1,3 +1,3 @@
-[submodule "assets/js/businessCard"]
-	path = assets/js/businessCard
+[submodule "businessCard"]
+	path = static/js/businessCard
 	url = https://github.com/abstractionjackson/business-card.git
