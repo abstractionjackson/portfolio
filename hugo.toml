@@ -1,0 +1,4 @@
+baseURL = 'https://github.com/abstractionjackson/portfolio'
+languageCode = 'en-us'
+title = 'Jackson Galan | Portfolio'
+theme = 'saturday'
