@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main>
+  {{ .Content }}
+  <ul style="margin: 0; padding: 0">
+    {{ range .Paginator.Pages }}
+    <li style="list-style: none; max-width: 558px; margin: auto">
+      <article>
+        {{ with .Resources.GetMatch "preview" }}
+        <header>
+          <img
+            src="{{ .RelPermalink }}"
+            alt=""
+          />
+        </header>
+        {{ end }}
+        <main>
+          <h3>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h3>
+          <p>{{ .Summary }}</p>
+        </main>
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
