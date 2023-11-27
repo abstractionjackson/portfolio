@@ -1,8 +1,12 @@
-baseURL = 'https://github.com/abstractionjackson/portfolio'
+baseURL = 'https://abstractionjackson.com'
 languageCode = 'en-us'
 title = 'Jackson Galan | Portfolio'
 theme = 'saturday'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [[menus.main]]
 name = 'About'
