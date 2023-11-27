@@ -1,0 +1,8 @@
+{{ $icon := resources.Get "icons/github-mark.svg" }}
+<a
+  href="{{ . }}"
+  class="icon"
+  style="display: block; width: 100%; height: 100%"
+>
+  {{ $icon.Content | safeHTML }}
+</a>

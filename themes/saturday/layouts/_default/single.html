@@ -14,13 +14,22 @@
       class="container"
       style="max-width: 768px; padding: 2rem 0"
     >
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Summary }}</p>
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
-      $dateHuman := .Date | time.Format ":date_long" }}
-      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-      {{ with .Params.github_url }}
-      <a href="{{ . | urlize }}">GitHub</a>
+      <div class="container-fluid">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Summary }}</p>
+      </div>
+      <div class="container-fluid">
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
+        $dateHuman := .Date | time.Format ":date_long" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      </div>
+      {{ with .Params.github_repo }}
+      <div
+        class="container-fluid"
+        style="margin-left: 1rem; margin-top: 1rem; padding: 0; width: 1.25rem"
+      >
+        {{ partial "github-repo-link" . }}
+      </div>
       {{ end }}
     </header>
     <main
