@@ -1,10 +1,38 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<div>
+  {{ with .Resources.GetMatch "preview" }}
+  <figure>
+    <img
+      src="{{ .RelPermalink }}"
+      alt=""
+      style="width: 100%; max-height: 33vh; object-fit: cover"
+    />
+  </figure>
+  {{ end }}
+  <section class="container">
+    <header
+      class="container"
+      style="max-width: 768px; padding: 2rem 0"
+    >
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Summary }}</p>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
+      $dateHuman := .Date | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      {{ with .Params.github_url }}
+      <a href="{{ . | urlize }}">GitHub</a>
+      {{ end }}
+    </header>
+    <main
+      class="container"
+      style="max-width: 768px"
+    >
+      {{ .Content }}
+    </main>
+  </section>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <section>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </section>
+</div>
 {{ end }}
