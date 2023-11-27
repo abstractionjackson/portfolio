@@ -1,0 +1,7 @@
+{{ $width := .width}} {{ with resources.Get "icons/branding.png" }}
+<img
+  src="{{ .RelPermalink}}"
+  alt=""
+  width="{{ $width }}"
+/>
+{{ end }}

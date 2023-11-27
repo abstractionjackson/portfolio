@@ -14,9 +14,12 @@ Renders a menu for the given menu ID.
   <nav style="padding: 0 1.5rem;">
     <ul>
       <li>
-        <a href="{{ site.BaseURL}}">Home</a>
+        <a href="{{ site.BaseURL}}">
+          {{ partial "branding.html" (dict "width" 30) }}
+        </a>
       </li>
     </ul>
+    <ul></ul>
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
