@@ -11,12 +11,15 @@
     >Hire Jackson</a
   >
 </div>
-{{ end }} {{ define "main" }}
+{{ end }} {{ define "main" }} {{ partial "business-card" . }}
 <main>
-  {{ partial "business-card" . }}
-  <div
+  <section
     class="container"
-    style="max-width: 400px; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+    style="
+      max-width: 400px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      padding: 2rem 0 0;
+    "
   >
     <business-card>
       <img
@@ -36,6 +39,12 @@
       >
       <h2 slot="job_title">Software Engineer</h2>
     </business-card>
-  </div>
+  </section>
+  <section>
+    <header class="container-fluid">
+      <h2>Projects</h2>
+    </header>
+    {{ partial "projects.html" . }}
+  </section>
 </main>
 {{ end }}
