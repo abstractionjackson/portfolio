@@ -6,7 +6,7 @@ draft = false
 github_repo = "https://github.com/abstractionjackson/business-card"
 [[resources]]
 name = 'preview'
-src = 'preview.png'
+src = 'biz.png'
 +++
 
 {{< figure src="/images/patrick_bateman.jpeg" caption="A Professional -- Albiet Static -- Business Card; <i>American Psycho (2000)</i>">}}
