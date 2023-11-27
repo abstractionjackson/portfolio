@@ -9,7 +9,7 @@ name = 'preview'
 src = 'preview.png'
 +++
 
-{{< figure src="images/patrick_bateman.webp" caption="Professional, Yet Static, Business Cards; American Psycho (2000)">}}
+{{< figure src="/images/patrick_bateman.jpeg" caption="A Professional -- Albiet Static -- Business Card; <i>American Psycho (2000)</i>">}}
 
 ## Goals
 
