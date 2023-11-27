@@ -1,30 +1,54 @@
 <template id="business-card">
-  <header>
-    <figure>
-      <slot name="avatar">
-        <img
-          src="#"
-          alt=""
-        />
+  <style>
+    :host {
+      display: block;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 2;
+      padding: 1rem;
+    }
+    header {
+      display: flex;
+    }
+    figure {
+      margin: auto;
+      grid-column: 1 / 2;
+    }
+    main {
+      grid-column: 2 /3;
+      padding: 1rem;
+    }
+  </style>
+  <div class="container">
+    <header>
+      <figure>
+        <slot name="avatar">
+          <img
+            src="#"
+            alt=""
+            width="400"
+          />
+        </slot>
+      </figure>
+    </header>
+    <main>
+      <slot name="full_name">
+        <span>John Doe</span>
       </slot>
-    </figure>
-  </header>
-  <main>
-    <slot name="full_name">
-      <span class="name_first">John</span>
-      <span> </span>
-      <span class="name_last">Doe</span>
-    </slot>
-    <slot name="github">
-      <a href="http://github.com">@username</a>
-    </slot>
-    <slot name="company_name">
-      <span hidden>Acme Co.</span>
-    </slot>
-    <slot name="job_title">
-      <span class="job_title">Vice President</span>
-    </slot>
-  </main>
+      <slot name="github">
+        <a href="http://github.com">@username</a>
+      </slot>
+      <slot name="company_name">
+        <span hidden>Acme Co.</span>
+      </slot>
+      <i>
+        <slot name="job_title">
+          <span class="job_title">Vice President</span>
+        </slot>
+      </i>
+    </main>
+  </div>
 </template>
 <script>
   customElements.define(
@@ -32,14 +56,7 @@
     class extends HTMLElement {
       constructor() {
         super()
-
         const shadowRoot = this.attachShadow({ mode: 'open' })
-
-        const linkCSS = document.createElement('link')
-        linkCSS.rel = 'stylesheet'
-        linkCSS.href = '{{ site.BaseURL }}css/business-card.css'
-        this.shadowRoot.appendChild(linkCSS)
-
         const template = document.getElementById('business-card')
         const templateContent = template.content
         this.shadowRoot.appendChild(templateContent.cloneNode(true))

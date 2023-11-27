@@ -1,7 +1,7 @@
 {{ define "banner" }}
 <div
   class="banner pico-background-blue-800"
-  style="text-align: center; padding: 0.25rem"
+  style="text-align: center; padding: 0.5rem 0 0.75rem; font-size: 1.2em"
 >
   <span><strong>Open to Work</strong></span>
   <span>📣</span>
@@ -13,36 +13,45 @@
 </div>
 {{ end }} {{ define "main" }} {{ partial "business-card" . }}
 <main>
+  <style>
+    #home-business-card {
+      padding: 0;
+      max-width: 558px;
+    }
+    #home-business-card img {
+      border-radius: 100%;
+    }
+    h1[slot='full_name'] {
+      margin: 0;
+    }
+  </style>
   <section
     class="container"
-    style="
-      max-width: 400px;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      padding: 2rem 0 0;
-    "
+    id="home-business-card"
   >
     <business-card>
       <img
         slot="avatar"
         src="{{ site.BaseURL }}images/avatar.png"
         alt="headshot of young software engineer"
+        class="pico-background-blue-600"
+        style="text-shadow: 'rgba(255, 255, 255) -1px 1px"
       />
       <h1 slot="full_name">
-        <span class="name_first">Jackson</span>
-        <span> </span>
-        <span class="name_last pico-color-blue-800">Galan</span>
+        <div>Jackson</div>
+        <div class="pico-color-blue-600">Galan</div>
       </h1>
       <a
         slot="github"
         href="https://github.com/abstractionjackson"
         >@abstractionjackson</a
       >
-      <h2 slot="job_title">Software Engineer</h2>
+      <h4 slot="job_title">Software Engineer</h4>
     </business-card>
   </section>
   <section>
     <header class="container-fluid">
-      <h2>Projects</h2>
+      <h2 style="text-align: center">Projects</h2>
     </header>
     {{ partial "projects.html" . }}
   </section>
