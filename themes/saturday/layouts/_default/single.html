@@ -16,7 +16,9 @@
     >
       <div class="container-fluid">
         <h1>{{ .Title }}</h1>
-        <p>{{ .Summary }}</p>
+        {{ with .Params.subtitle }}
+        <h6>{{ . }}</h6>
+        {{ end }}
       </div>
       <div class="container-fluid">
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
