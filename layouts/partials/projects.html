@@ -14,7 +14,10 @@
         <h3>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h3>
-        <p>{{ .Summary }}</p>
+        {{ with .Params.subtitle }}
+        <h6>{{ . }}</h6>
+        {{ end }}
+        <p>{{ .Summary | truncate 225 }}</p>
       </main>
     </article>
   </li>

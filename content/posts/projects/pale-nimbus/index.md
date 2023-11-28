@@ -1,6 +1,6 @@
 +++
 title = "Pale Nimbus"
-summary = 'Build a Dynamic and Professional Business Card Web Component Using HTML, CSS, and JS'
+subtitle = 'Build a Dynamic and Professional Business Card Web Component Using HTML, CSS, and JS'
 date = 2023-11-26T14:36:09-08:00
 draft = false
 github_repo = "https://github.com/abstractionjackson/business-card"
