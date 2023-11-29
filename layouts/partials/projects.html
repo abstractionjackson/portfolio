@@ -1,5 +1,5 @@
 <ul style="margin: 0; padding: 0">
-  {{ range site.RegularPages }}
+  {{ range site.RegularPages }} {{ if eq .CurrentSection.Title "Projects"}}
   <li style="list-style: none; max-width: 558px; margin: auto">
     <article>
       {{ with .Resources.GetMatch "preview" }}
@@ -17,9 +17,15 @@
         {{ with .Params.subtitle }}
         <h6>{{ . }}</h6>
         {{ end }}
-        <p>{{ .Summary | truncate 225 }}</p>
+        <p>
+          {{ .Summary }}
+          {{ if .Truncated }}
+          <a href="{{ .RelPermalink }}">Read More...</a>
+          {{ end }}
+        </p>
       </main>
     </article>
   </li>
   {{ end }}
 </ul>
+{{ end }}

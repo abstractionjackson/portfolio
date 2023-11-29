@@ -2,6 +2,7 @@ baseURL = 'https://abstractionjackson.com'
 languageCode = 'en-us'
 title = 'Jackson Galan | Portfolio'
 theme = 'saturday'
+summaryLength = 50
 
 [markup]
   [markup.goldmark]

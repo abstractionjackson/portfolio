@@ -1,6 +1,7 @@
 +++
 title = "Pale Nimbus"
 subtitle = 'Build a Dynamic and Professional Business Card Web Component Using HTML, CSS, and JS'
+summary = "Dive into our cutting-edge project where we construct an interactive business card leveraging the power of web standards: CustomElements API, Shadow DOM, and HTML's template and slot elements. This initiative is a fusion of advanced web technologies and creative design, ideal for tech-savvy professionals eager to leave a memorable impact with a unique digital presence."
 date = 2023-11-26T14:36:09-08:00
 draft = false
 github_repo = "https://github.com/abstractionjackson/business-card"
@@ -11,21 +12,23 @@ src = 'biz.png'
 
 {{< figure src="/images/patrick_bateman.jpeg" caption="A Professional -- Albiet Static -- Business Card; <i>American Psycho (2000)</i>">}}
 
-## Goals
+## Summary
 
-- skip the js framework
-- take advantage of browser APIs
-  - customElements
-  - the shadow DOM
-    - encapsulate CSS at the component level
-- take advantage of HTML `template` and `slot` elements
-  - allows for styling at the document level
-
-## Outcome
-
-A (portable?) component that renders links to your social profile pages
+Dive into our cutting-edge project where we construct an interactive business card leveraging the power of web standards: CustomElements API, Shadow DOM, and HTML's template and slot elements. This initiative is a fusion of advanced web technologies and creative design, ideal for tech-savvy professionals eager to leave a memorable impact with a unique digital presence.
 
 ## Features
+
+The "Web Components Business Card" project stands out with its unique set of features, designed to cater to a wide range of developers, from beginners to experts. Here's what makes this project special:
+
+- **Framework Agnostic**: At the core of our project is its universal compatibility. Built using standard web APIs, this web component is meticulously crafted to be framework-agnostic. Whether you're working with React, Vue, Angular, or even without any JavaScript framework, our business card component seamlessly integrates into your project. This flexibility ensures that no matter what your project's stack is, our component can be a part of it without any hassle.
+
+- **Ease of Adoption**: We believe in simplicity and accessibility. If you're familiar with basic HTML, you're all set to use our Web Component. There's no steep learning curve or complex setup involved. This ease of adoption makes it an ideal choice for those who are new to web development or those who prefer to work with straightforward, uncomplicated tools. It's as simple as integrating standard HTML elements into your web pages.
+
+- **Lightweight Design**: In today's digital world, where speed and efficiency are paramount, our business card component is designed to be lightweight and fast. With no external dependencies, it ensures that your website remains speedy and responsive. This lightweight nature also contributes to better overall performance and user experience, making your website not just visually appealing but also technically robust.
+
+In summary, the "Web Components Business Card" is not just a tool; it's a solution designed to be adaptable, easy to use, and performance-oriented, making it a valuable asset for any web development project.
+
+## Notes
 
 ### Styling at the Component Level
 
