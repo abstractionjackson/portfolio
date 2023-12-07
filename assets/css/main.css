@@ -1,0 +1,5 @@
+@import url('pico.colors.css');
+
+.banner .link:hover {
+  color: var(--pico-color-blue-450);
+}
