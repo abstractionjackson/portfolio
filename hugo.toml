@@ -24,5 +24,6 @@ name = 'Resume'
 pageRef = '/resume.pdf'
 weight = 30
 
-[og]
-image = 'DALL·E 2023-12-15 12.49.50 - A creative and professional image for a software engineering portfolio, incorporating a literal play on the word 'portfolio'. The design should featur.png'
+[params]
+[params.og.image]
+url = "images/DALL·E 2023-12-15 12.49.50 - A creative and professional image for a software engineering portfolio, incorporating a literal play on the word 'portfolio'. The design should featur.png"
