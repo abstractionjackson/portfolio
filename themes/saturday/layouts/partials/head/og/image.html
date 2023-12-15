@@ -1,0 +1,3 @@
+{{ with site.Resources.GetMatch site.Params.og.image }}
+<meta property="og:image" content="{{ .RelPermalink }}" />
+{{ end }}
