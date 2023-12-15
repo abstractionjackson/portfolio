@@ -4,6 +4,7 @@
   content="width=device-width"
 />
 {{ partial "head/og/image.html" }}
+{{ partial "head/og/description.html" }}
 <title>
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}

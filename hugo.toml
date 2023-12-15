@@ -27,3 +27,5 @@ weight = 30
 [params]
 [params.og.image]
 url = "images/DALL·E 2023-12-15 12.49.50 - A creative and professional image for a software engineering portfolio, incorporating a literal play on the word 'portfolio'. The design should featur.png"
+[params.og.description]
+content = "The software engineering portfolio of San Francisco Developer Jackson Galan, portfolio serves as a means to contact the developer, peruse his body of work, and learn more about his skills and experience."
