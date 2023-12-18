@@ -11,47 +11,14 @@
     >Hire Jackson</a
   >
 </div>
-{{ end }} {{ define "main" }} {{ partial "business-card" . }}
+{{ end }} {{ define "main" }}
 <main>
-  <style>
-    #home-business-card {
-      padding: 0;
-      max-width: 558px;
-    }
-    img[slot='avatar'] {
-      border-radius: 100%;
-    }
-    h1[slot='full_name'] {
-      margin: 0;
-    }
-    img[slot='qr_linkedin'] {
-      width: 4rem;
-    }
-  </style>
   <section
     class="container"
     id="home-business-card"
+    style="padding: 0; max-width: 558px"
   >
-    <business-card>
-      <img
-        slot="avatar"
-        src="{{ site.BaseURL }}images/avatar.png"
-        alt="headshot of young software engineer"
-        class="pico-background-blue-600"
-        style="text-shadow: 'rgba(255, 255, 255) -1px 1px"
-      />
-      <h1 slot="full_name">
-        <div>Jackson</div>
-        <div class="pico-color-blue-600">Galan</div>
-      </h1>
-      <a
-        slot="github"
-        href="https://github.com/abstractionjackson"
-        >@abstractionjackson</a
-      >
-      <h4 slot="job_title">Software Engineer</h4>
-      <img slot="qr_linkedin" src="{{ site.BaseURL}}/qr_linkedin.jpg" alt="" />
-    </business-card>
+   {{ partial "business-card/index.html" . }}
   </section>
   <section>
     <header class="container-fluid">

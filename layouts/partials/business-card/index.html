@@ -1,0 +1,32 @@
+{{ partial "business-card/template.html" . }}
+<style>
+    img[slot='avatar'] {
+      border-radius: 100%;
+    }
+    h1[slot='full_name'] {
+      margin: 0;
+    }
+    img[slot='qr_linkedin'] {
+      width: 4rem;
+    }
+  </style>
+<business-card>
+    <img
+      slot="avatar"
+      src="{{ site.BaseURL }}images/avatar.png"
+      alt="headshot of young software engineer"
+      class="pico-background-blue-600"
+      style="text-shadow: 'rgba(255, 255, 255) -1px 1px"
+    />
+    <h1 slot="full_name">
+      <div>Jackson</div>
+      <div class="pico-color-blue-600">Galan</div>
+    </h1>
+    <a
+      slot="github"
+      href="https://github.com/abstractionjackson"
+      >@abstractionjackson</a
+    >
+    <h4 slot="job_title">Software Engineer</h4>
+    <img slot="qr_linkedin" src="{{ site.BaseURL}}/qr_linkedin.jpg" alt="" />
+  </business-card>
