@@ -9,8 +9,4 @@
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}
 </title>
-<link
-  rel="stylesheet"
-  href="{{ site.BaseURL }}pico.min.css"
-/>
 {{ partial "head/css.html" . }}
