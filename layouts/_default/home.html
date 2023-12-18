@@ -18,11 +18,14 @@
       padding: 0;
       max-width: 558px;
     }
-    #home-business-card img {
+    img[slot='avatar'] {
       border-radius: 100%;
     }
     h1[slot='full_name'] {
       margin: 0;
+    }
+    img[slot='qr_linkedin'] {
+      width: 4rem;
     }
   </style>
   <section
@@ -47,6 +50,7 @@
         >@abstractionjackson</a
       >
       <h4 slot="job_title">Software Engineer</h4>
+      <img slot="qr_linkedin" src="{{ site.BaseURL}}/qr_linkedin.jpg" alt="" />
     </business-card>
   </section>
   <section>
