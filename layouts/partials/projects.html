@@ -2,14 +2,22 @@
   {{ range site.RegularPages }} {{ if eq .CurrentSection.Title "Projects"}}
   <li style="list-style: none; max-width: 558px; margin: auto">
     <article>
-      {{ with .Resources.GetMatch "preview" }}
+      {{ if .Params.featured_image }} {{ with resources.GetRemote
+      .Params.featured_image }}
       <header>
         <img
           src="{{ .RelPermalink }}"
           alt=""
         />
       </header>
-      {{ end }}
+      {{ end }} {{ else }} {{ with .Resources.GetMatch "preview" }}
+      <header>
+        <img
+          src="{{ .RelPermalink }}"
+          alt=""
+        />
+      </header>
+      {{ end }} {{ end }}
       <main>
         <h3>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -18,8 +26,7 @@
         <h6>{{ . }}</h6>
         {{ end }}
         <p>
-          {{ .Summary }}
-          {{ if .Truncated }}
+          {{ .Summary }} {{ if .Truncated }}
           <a href="{{ .RelPermalink }}">Read More...</a>
           {{ end }}
         </p>
