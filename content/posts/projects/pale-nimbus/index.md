@@ -5,10 +5,9 @@ summary = "Dive into our cutting-edge project where we construct an interactive 
 date = 2023-11-26T14:36:09-08:00
 draft = false
 github_repo = "https://github.com/abstractionjackson/business-card"
-featured_image = "https://im3.ezgif.com/tmp/ezgif-3-d78a74be96.gif"
 [[resources]]
 name = 'preview'
-src = 'biz.png'
+src = 'wcbc-rwd.gif'
 +++
 
 {{< figure src="/images/patrick_bateman.jpeg" caption="A Professional -- Albiet Static -- Business Card; <i>American Psycho (2000)</i>">}}
