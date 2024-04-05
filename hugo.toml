@@ -1,4 +1,8 @@
 baseURL = 'https://abstractionjackson.com/'
 languageCode = 'en-us'
-title = 'Jackson Galan | Portfolio'
+title = 'Portfolio'
 theme = "radiation"
+
+[params]
+[params.brand]
+name = 'Abstraction Jackson'

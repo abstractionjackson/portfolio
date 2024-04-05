@@ -1,10 +1,13 @@
 <article class="project">
-    <header>
-        <a href="{{ .RelPermalink }}">
-            <h3>{{ .Title }}</h3>
-        </a>
-    </header>
+
     <main>
-        <p>{{ .Description }}</p>
+        <hgroup>
+            <h3>
+                <a href="{{ .RelPermalink }}">
+                   <span>{{ .Title }}</span>
+                </a>
+            </h3>
+            <p>{{ .Description }}</p>
+        </hgroup>
     </main>
 </article>

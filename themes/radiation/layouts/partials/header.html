@@ -1,6 +1,11 @@
 <section>
-    <a href="{{ site.BaseURL }}">
-        <h1>{{ site.Title }}</h1>
-    </a>
+    <h1>
+        <a href="{{ site.BaseURL }}">
+            <span class="brand primary">{{ site.Params.brand.name }}</span>
+            <span class="title">
+                {{ site.Title }}
+            </span>
+        </a>
+    </h1>
 </section>
 {{ partial "menu.html" (dict "menuID" "main" "page" .) }}

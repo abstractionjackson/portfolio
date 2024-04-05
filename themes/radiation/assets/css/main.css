@@ -1,17 +1,14 @@
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+:root {
+	--brand-primary: #f54e4e;
 }
-
-footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+.brand.primary {
+	color: var(--brand-primary);
 }
-
+/* remove list bullet */
+ul#project-pages > li {
+	list-style-type: none;
+}
+/* remove link underline */
 a {
-  color: #00e;
-  text-decoration: none;
+	text-decoration: none;
 }
