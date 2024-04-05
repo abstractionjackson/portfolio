@@ -1,0 +1,16 @@
+{{ define "main" }}
+<!-- List of Projects -->
+{{ $projects := site.GetPage "projects"}}
+<section>
+  <h2>
+    {{ $projects.Title }}
+  </h2>
+  <ul>
+    {{ range $projects.Pages }}
+      <li>
+        {{ partial "project/preview.html" . }}
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
