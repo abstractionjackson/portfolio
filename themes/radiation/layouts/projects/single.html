@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <section>
+        <hgroup>
+            <h3>
+                <span>{{ .Title }}</span>
+            </h3>
+            <ul class="links">
+                {{ if .Params.githubRepo }}
+                    <li>
+                        {{ partial "github-repo-link.html" (dict "repo" .Params.githubRepo) }}
+                    </li>
+                {{ end }}
+                {{ if .Params.site }}
+                    <li>
+                        {{ partial "site-link.html" (dict "url" .Params.site) }}
+                    </li>
+                {{ end }}
+            </ul>
+        </hgroup>
+    </section>
+    <section>
+        {{ .Content }}
+    </section>
+{{ end }}

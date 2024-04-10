@@ -1,0 +1,44 @@
+# Hugo files
+/public/
+/resources/_gen/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other
+*.log
+*.swo
+*.swp
+*.bak
+*.orig
+*.rej
+*.swo
+*.swp
+*.bak
+*.orig
+*.rej
+*.swo
+*.swp
+*.bak
+*.orig
+*.rej

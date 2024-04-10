@@ -6,3 +6,4 @@ theme = "radiation"
 [params]
 [params.brand]
 name = 'Abstraction Jackson'
+githubUserName = 'abstractionjackson'

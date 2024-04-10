@@ -4,4 +4,6 @@ date = {{ .Date }}
 draft = true
 description = ""
 technologies = []
+githubRepo = ""
+website = ""
 +++
