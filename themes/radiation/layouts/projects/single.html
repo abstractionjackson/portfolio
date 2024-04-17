@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <section>
+    <section class="project" id="project-{{ .Title | urlize }}">
         <hgroup>
             <h3>
                 <span>{{ .Title }}</span>
@@ -17,8 +17,8 @@
                 {{ end }}
             </ul>
         </hgroup>
-    </section>
-    <section>
-        {{ .Content }}
+        <div class="content">
+            {{ .Content }}
+        </div>
     </section>
 {{ end }}

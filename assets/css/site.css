@@ -1,0 +1,6 @@
+figure.preview{
+    padding: 1rem;
+}
+figure.preview > img {
+    max-width: 360px;
+}
