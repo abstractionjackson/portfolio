@@ -23,6 +23,10 @@ hgroup > h3 {
 	width: 1rem;
 	height: 1rem;
 }
+/* lists */
+.content ul {
+	padding-left: 1.5em;
+}
 /* links */
 ul.links {
 	display: flex;
