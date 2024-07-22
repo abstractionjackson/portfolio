@@ -4,8 +4,9 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <main style="margin: 0; padding: 0;">
-    {{ block "main" . }}{{ end }}
-  </main>
+  {{ block "main" . }}
+  <main>BASE</main>
+  {{ end }}
+  {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 </body>
 </html>
