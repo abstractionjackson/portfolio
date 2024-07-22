@@ -1,8 +1,8 @@
 +++
-title = 'Deep Habits'
+title = 'Habitual'
 date = 2024-04-16T15:50:11-07:00
 draft = false
-description = 'A Vanilla JS CRUD App 🙌  Built on SQL.js and Event Listeners and Inspired by Cal Newport'
+description = 'A 24hr Habit Tracker'
 site = 'https://abstractionjackson.github.io/habit-tracker/'
 githubRepo = 'habit-tracker'
 +++
