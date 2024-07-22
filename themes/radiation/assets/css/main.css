@@ -1,9 +1,45 @@
-:root {
-	--brand-primary: #f54e4e;
-	--github-mark-primary: #24292f
+html {
+	scroll-behavior: smooth;
 }
-.brand.primary {
-	color: var(--brand-primary);
+main {
+	margin: 0;
+	padding: 0;
+}
+button {
+	font-family: sans-serif;
+}
+.page {
+	min-height: 100vh;
+	scroll-snap-align: start;
+}
+.hero {
+	min-height: 100vh;
+	background: #000;
+	color: #fff;
+	font-size: xx-large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hero .inner {
+	display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 3em;
+}
+.hero .inner > span:nth-child(2) {
+	font-weight: 700;
+}
+.hero .inner > span:nth-child(3) {
+	font-style: italic;
+}
+.hero .inner > span:nth-child(4) {
+	color: #000;
+	background-color: #000;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	text-decoration: underline;
+	text-underline-offset: 10px;
 }
 /* remove list bullet */
 ul#project-pages > li,

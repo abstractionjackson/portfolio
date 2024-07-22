@@ -4,6 +4,13 @@ title = 'Portfolio'
 theme = "radiation"
 
 [params]
+[params.hero]
+text = 'Abstraction Jackson'
+[params.hero.button]
+primary.text = "Portfolio"
+primary.href = "#portfolio"
+secondary.text = "Contents"
+secondary.href = "#toc"
 [params.brand]
 name = 'Abstraction Jackson'
 githubUserName = 'abstractionjackson'

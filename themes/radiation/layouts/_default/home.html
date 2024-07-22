@@ -1,16 +1,66 @@
 {{ define "main" }}
-<!-- List of Projects -->
-{{ $projects := site.GetPage "projects"}}
-<section>
-  <h2>
-    {{ $projects.Title }}
-  </h2>
-  <ul id="project-pages">
-    {{ range $projects.Pages }}
-      <li>
-        {{ partial "project/preview.html" . }}
-      </li>
-    {{ end }}
+<a href="#toc">
+  <section class="hero page">
+    <div class="inner">
+      <span>A/B</span>
+      <span>str*</span>
+      <span>action</span>
+      <span>Jackson</span>
+    </div>
+  </section>
+</a>
+<section class="toc container page" id="toc">
+<nav>
+  <ul style="display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; font-size: 1.25em;">
+    <a href="#about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/projects">Projects</a>
   </ul>
+</nav>
 </section>
+<section class="container page" id="about">
+  {{ with .Page.Params.about }}
+  <h3>{{ .heading.text }}</h3>
+  <p>{{ .text }}</p>
+  {{ end }}
+</section>
+<script>
+  // JavaScript
+document.addEventListener('DOMContentLoaded', (event) => {
+  let lastScrollTop = 0;
+  document.querySelector('main').addEventListener('wheel', function(e) {
+    const direction = e.deltaY > 0 ? 'down' : 'up';
+    e.preventDefault(); // Prevent the default scroll behavior
+    if (direction === 'down') {
+      scrollToNextSection();
+    } else {
+      scrollToPreviousSection();
+    }
+  });
+
+  function scrollToNextSection() {
+    // Logic to scroll to the next section
+    const sections = document.querySelectorAll('.page');
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      if (section.getBoundingClientRect().top > 0) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        break;
+      }
+    }
+  }
+
+  function scrollToPreviousSection() {
+    // Logic to scroll to the previous section
+    const sections = [...document.querySelectorAll('.page')].reverse();
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      if (section.getBoundingClientRect().bottom < window.innerHeight) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        break;
+      }
+    }
+  }
+});
+</script>
 {{ end }}
