@@ -4,6 +4,10 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  {{ if .IsHome }}
+  {{ else }}
+  {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+  {{ end }}
   {{ block "main" . }}
   <main>BASE</main>
   {{ end }}
