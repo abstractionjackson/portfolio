@@ -41,6 +41,15 @@ button {
 	text-decoration: underline;
 	text-underline-offset: 10px;
 }
+#hamburger::after {
+	content: initial !important
+}
+#main-menu * {
+	background: transparent;
+	color: #ffffff;
+	font-family: monospace;
+	font-size: 1em;
+}
 /* remove list bullet */
 ul#project-pages > li,
 ul.links > li {
