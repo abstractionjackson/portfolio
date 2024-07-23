@@ -8,6 +8,9 @@ main {
 button {
 	font-family: sans-serif;
 }
+em, i {
+	font-style: italic;
+}
 .page {
 	min-height: 100vh;
 	scroll-snap-align: start;
