@@ -1,7 +1,11 @@
 <section class="container-fluid">
-    <nav>
+    <nav style="padding: 0 1rem; margin: 1rem 0; font-family: sans-serif;">
         <ul>
-            <a href="/">AB</a>
+            <a href="/">
+                {{ with resources.Get "brand-logo.png" }}
+                    <img src="{{ .RelPermalink }}" alt="Brand Logo" width="30" style="border-radius: 50%;"/>
+                {{ end }}
+            </a>
         </ul>
         <ul></ul>
         <ul>
