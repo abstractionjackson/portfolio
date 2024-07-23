@@ -22,11 +22,16 @@ button {
 	align-items: center;
 	flex-direction: column;
 }
+/* declar var for hero font size */
+:root {
+	--hero-font-size: 64px;
+}
+
 .hero .inner {
 	display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    font-size: 3em;
+    font-size: var(--hero-font-size);
 }
 .hero .inner > span:nth-child(2) {
 	font-weight: 700;
@@ -34,22 +39,38 @@ button {
 .hero .inner > span:nth-child(3) {
 	font-style: italic;
 }
+.animated,
 .hero .inner > span:nth-child(4) {
 	color: #000;
-	background-color: #000;
+	background-color: transparent;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	font-size: var(--hero-font-size);
+	font-family: sans-serif;
+}
+.hero .inner > span:nth-child(4) {
+	background-color: #000;
 	text-decoration: underline;
 	text-underline-offset: 10px;
 }
 #hamburger::after {
 	content: initial !important
 }
+#hamburger:focus {
+	box-shadow: 0 0 0 2px #fff !important;
+}
 #main-menu * {
-	background: transparent;
+	background: #000;
 	color: #ffffff;
 	font-family: monospace;
 	font-size: 1em;
 }
+
+#main-menu > ul li>a:focus-visible{
+	text-decoration: underline;
+	outline: none !important;
+	box-shadow: none;;
+}
+
 /* remove list bullet */
 ul#project-pages > li,
 ul.links > li {
