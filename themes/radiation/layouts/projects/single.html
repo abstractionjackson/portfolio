@@ -1,24 +1,28 @@
 {{ define "main" }}
-    <section class="project" id="project-{{ .Title | urlize }}">
-        <hgroup>
-            <h3>
-                <span>{{ .Title }}</span>
-            </h3>
-            <ul class="links">
-                {{ if .Params.githubRepo }}
-                    <li>
-                        {{ partial "github-repo-link.html" (dict "repo" .Params.githubRepo) }}
-                    </li>
-                {{ end }}
-                {{ if .Params.site }}
-                    <li>
-                        {{ partial "site-link.html" (dict "url" .Params.site) }}
-                    </li>
-                {{ end }}
-            </ul>
-        </hgroup>
-        <div class="content">
-            {{ .Content }}
-        </div>
+    <section class="project container" id="project-{{ .Title | urlize }}">
+        <article>
+            <header>
+                <hgroup>
+                    <h3>
+                        <span>{{ .Title }}</span>
+                    </h3>
+                    <ul class="links">
+                        {{ if .Params.githubRepo }}
+                            <li>
+                                {{ partial "github-repo-link.html" (dict "repo" .Params.githubRepo) }}
+                            </li>
+                        {{ end }}
+                        {{ if .Params.site }}
+                            <li>
+                                {{ partial "site-link.html" (dict "url" .Params.site) }}
+                            </li>
+                        {{ end }}
+                    </ul>
+                </hgroup>
+            </header>
+            <main>
+                {{ .Content }}
+            </main>
+        </article>
     </section>
 {{ end }}

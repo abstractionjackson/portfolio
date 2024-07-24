@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+	font-family: sans-serif;
 }
 main {
 	margin: 0;
@@ -102,6 +103,28 @@ ul.links {
 }
 ul.links .icon {
 	margin-right: 0.5rem;
+}
+/* Project Single Page */
+.project.container {
+	/* todo */
+	max-width: 698px;;
+}
+.project article main {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+.project article main figure {
+	margin: 3rem 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project article main figure img {
+	margin:auto;
+}
+.project article main figure figcaption {
+	font-style: italic;
+	text-align: center;
 }
 /* Project Card */
 #project-cards .card header figure {

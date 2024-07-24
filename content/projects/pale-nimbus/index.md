@@ -11,17 +11,9 @@ name = 'preview-image'
 src = 'inspection.webp'
 params.saturation = 0
 +++
-{{< figure src="/images/preview-biz-card.png" title="The Business Card, Rasterized" class="preview" >}}
+**Pale Nimbus** is a business card for the web. Consolidate your contact details in a share-friendly format that scales, and features a *tasteful* IRL aesthetic
 
-## About
-A business card you can edit in the browser, __Pale Nimbus__ is built on the Web Components suite of technologies. Visit the [example site](https://abstractionjackson.github.io/business-card), and click any of the elements to update its text. Visit the source code to grab a copy of the template (from `index.html`) and the script (`script.js`) to use the component in your site!
-## Features
-Name, Title, Company, Team, Phone, Address
-## Technologies
-- HTML
- - 
-- CSS
-    - text-shadow
-    - text-transform: small-caps
-    - grid
-- JS
+{{< figure src="/images/preview-biz-card.png" title="The Famous Business Card as Interactive HTML Element" >}}
+
+## Getting Started
+
