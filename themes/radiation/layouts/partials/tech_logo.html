@@ -1,0 +1,4 @@
+{{- $logoName := . -}}
+{{ with resources.GetMatch (printf "logos/technology/%s.*" $logoName) }}
+<img src="{{ .RelPermalink }}" alt="{{ $logoName }}" class="logo">
+{{ end }}

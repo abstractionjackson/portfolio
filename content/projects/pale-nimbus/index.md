@@ -3,7 +3,7 @@ title = "Pale Nimbus"
 date = 2024-04-05T18:20:30Z
 draft = false
 summary = '''A portable, digital business card for the browser.'''
-technologies = ["HTML", "CSS", "JavaScript", "Web APIs"]
+technologies = ["HTML", "CSS", "js", "web-components"]
 githubRepo = "business-card"
 site = "https://abstractionjackson.github.io/business-card/"
 [[resources]]

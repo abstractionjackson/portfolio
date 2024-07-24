@@ -1,8 +1,10 @@
 <article class="card">
     <header>
-        {{ with .Resources.GetMatch "preview-image" }}
-        <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
-        {{ end }}
+        <figure>
+            {{ with .Resources.GetMatch "preview-image" }}
+            <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
+            {{ end }}
+        </figure>
     </header>
     <main>
         <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
@@ -11,10 +13,10 @@
         </p>
     </main>
     <footer>
-        <ul>
+        <ul class="technology">
             {{ range .Params.technologies }}
             <li class="badge">
-                <span>{{ . }}</span>
+                {{ partial "tech_logo.html" . }}
             </li>
             {{ end }}
         </ul>
