@@ -1,0 +1,22 @@
+<article class="card">
+    <header>
+        {{ with .Resources.GetMatch "preview-image" }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
+        {{ end }}
+    </header>
+    <main>
+        <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+        <p>
+            {{ .Summary }}
+        </p>
+    </main>
+    <footer>
+        <ul>
+            {{ range .Params.technologies }}
+            <li class="badge">
+                <span>{{ . }}</span>
+            </li>
+            {{ end }}
+        </ul>
+    </footer>
+</article>

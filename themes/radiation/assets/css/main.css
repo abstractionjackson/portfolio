@@ -103,7 +103,22 @@ ul.links {
 ul.links .icon {
 	margin-right: 0.5rem;
 }
-/* Project Preivew List */
-ul#project-pages {
-	max-width: 568px;
+/* Project Card */
+ul#project-cards .card {
+	/* a pico article whoe header is an image, and whose body contains the title and summary text. The footer contains a list of technologies used */
+	/* TODO */
+}
+ul#project-cards .card footer li.badge {
+	/* a badge that display some technology used in the project */
+	display: inline-block;
+	padding: 0.5em;
+	margin: 0.5em;
+	/* outline */
+	border: 1px solid #000;
+	border-radius: 10%;
+	background: lightgray;
+	font-family: sans-serif;
+	font-size: 0.75em;
+	/* remove the bullet point */
+	list-style-type: none;
 }

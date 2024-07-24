@@ -1,15 +1,15 @@
 +++
 title = "Pale Nimbus"
 date = 2024-04-05T18:20:30Z
-draft = true
-description = "A business card Web Component 🔧 inspired 📼 by American Psycho"
+draft = false
 summary = '''A portable, digital business card for the browser.'''
 technologies = ["HTML", "CSS", "JavaScript", "Web APIs"]
 githubRepo = "business-card"
 site = "https://abstractionjackson.github.io/business-card/"
 [[resources]]
-name = 'logo'
-src = 'images/barbell.svg'
+name = 'preview-image'
+src = 'inspection.webp'
+params.saturation = 0
 +++
 {{< figure src="/images/preview-biz-card.png" title="The Business Card, Rasterized" class="preview" >}}
 
