@@ -1,8 +1,8 @@
 +++
 title = 'Habitual'
 date = 2024-04-16T15:50:11-07:00
-draft = false
-description = 'A 24hr Habit Tracker'
+draft = true
+summary = '''A habit tracker that calculates the phase of adoption.'''
 site = 'https://abstractionjackson.github.io/habit-tracker/'
 githubRepo = 'habit-tracker'
 +++

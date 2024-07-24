@@ -1,10 +1,14 @@
 +++
 title = 'Live Toad Fitness'
 date = 2024-05-17T14:14:37-07:00
-draft = false
+draft = true
 site = 'https://deep-fitness.vercel.app/'
-summary = '''Nicholas Chamfort once said, "The only way Parlaiment could have a good day is if it ate a live toad first thing in the morning, so nothing worse could possibly happen." We take this mindset to our fitness regimen, and keep honest using a delightful, intuitive web app.'''
+summary = '''A fitness tracker dedicated to strength and hypertrophy training.'''
 githubRepo = 'deep-fitness'
+foo = 'FOO'
+[[resources]]
+name = 'logo'
+src = 'barbell.svg'
 +++
 {{< figure src="/images/preview-deep-fitness.png" title="Data Visualization of Sets by Exercise Across Workouts" class="preview" >}}
 
