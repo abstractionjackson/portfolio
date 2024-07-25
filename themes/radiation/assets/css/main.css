@@ -18,7 +18,7 @@ em, i {
 }
 .hero {
 	min-height: 100vh;
-	background: #000;
+	background-color: #13171f;
 	color: #fff;
 	font-size: xx-large;
 	display: flex;
@@ -36,6 +36,7 @@ em, i {
     flex-direction: column;
     font-family: sans-serif;
     font-size: var(--hero-font-size);
+	padding-bottom: 6rem;
 }
 .hero .inner > span:nth-child(2) {
 	font-weight: 700;
@@ -45,14 +46,14 @@ em, i {
 }
 .animated,
 .hero .inner > span:nth-child(4) {
-	color: #000;
+	color: #13171f;
 	background-color: transparent;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 	font-size: var(--hero-font-size);
 	font-family: sans-serif;
 }
 .hero .inner > span:nth-child(4) {
-	background-color: #000;
+	background-color: #13171f;
 	text-decoration: underline;
 	text-underline-offset: 10px;
 }
@@ -63,7 +64,7 @@ em, i {
 	box-shadow: 0 0 0 2px #fff !important;
 }
 #main-menu * {
-	background: #000;
+	background: #13171f;
 	color: #ffffff;
 	font-family: monospace;
 	font-size: 1em;
