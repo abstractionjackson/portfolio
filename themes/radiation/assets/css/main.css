@@ -70,7 +70,8 @@ em, i {
 	font-size: 1em;
 }
 
-#main-menu > ul li>a:focus-visible{
+#main-menu > ul li>a:focus-visible,
+#main-menu > ul li>a:active{
 	text-decoration: underline;
 	outline: none !important;
 	box-shadow: none;;
